@@ -1,0 +1,94 @@
+/* Подключаем шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Dancing+Script&family=Roboto:wght@400;500&display=swap');
+
+/* Стиль для всего текста */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Заголовок FinanceTracker */
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    margin: 0;
+    text-align: center;
+}
+
+/* Сделаем Finance черным, а Tracker зеленым */
+header h1 .finance {
+    color: black;
+}
+
+header h1 .tracker {
+    color: #4CAF50; /* Зеленый цвет */
+}
+
+/* Подзаголовок By steepin */
+header p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px; /* Сделал еще больше */
+    margin: 5px 0 0; /* Уменьшил отступ между заголовком и подзаголовком */
+    text-align: center;
+    color: #555;
+}
+
+/* Основной стиль */
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ввод и кнопки */
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Прогресс бар */
+progress {
+    width: 100%;
+    height: 20px;
+    margin-top: 10px;
+}
+
+/* История транзакций */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Стиль для секции итоговой суммы */
+#total-section h2 {
+    font-family: 'Montserrat', sans-serif; /* Используем тот же шрифт */
+    font-size: 36px; /* Такой же размер, как и у остальных заголовков */
+    font-weight: 600; /* Жирный шрифт */
+    color: #4CAF50; /* Зеленый цвет */
+}
