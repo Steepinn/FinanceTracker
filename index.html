@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1><span class="finance">Finance</span><span class="tracker">Tracker</span></h1>
+    <p>By Steepin</p>
+</header>
+
+<main>
+    <!-- Создание цели -->
+    <section id="goal-section">
+        <h2>Цель</h2>
+        <div id="goal-input">
+            <input type="text" id="goal-name" placeholder="Название цели">
+            <input type="number" id="goal-amount" placeholder="Сумма цели">
+            <button id="create-goal-btn">Создать цель</button>
+        </div>
+        <div id="goal-display" style="display:none;">
+            <h3 id="goal-title"></h3>
+            <p id="goal-amount-display"></p>
+            <progress id="goal-progress" value="0" max="100"></progress>
+            <button id="edit-goal-btn">Изменить цель</button>
+            <button id="save-goal-btn" style="display:none;">Сохранить изменения</button>
+        </div>
+    </section>
+
+    <!-- Ввод транзакций -->
+    <section id="transaction-section">
+        <h2>Транзакции</h2>
+        <input type="number" id="transaction-amount" placeholder="Введите сумму">
+        <button id="add-income-btn">Зачислить</button>
+        <button id="subtract-expense-btn">Вычислить</button>
+    </section>
+
+    <!-- История транзакций -->
+    <section id="history-section">
+        <h2>История транзакций</h2>
+        <ul id="transaction-history">
+            <!-- История будет добавляться сюда -->
+        </ul>
+    </section>
+
+    <!-- Итоговая сумма -->
+    <section id="total-section">
+        <h2>Итоговая сумма за месяц</h2>
+        <p id="total-amount">0</p>
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
